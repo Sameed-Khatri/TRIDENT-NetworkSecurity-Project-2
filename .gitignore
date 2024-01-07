@@ -10,3 +10,5 @@ ML-Script/predictionsTest2.csv
 ML-Script/predictionsTest8.csv
 trident-network-security/backend/node_modules
 trident-network-security/backend/capture.pcap
+trident-network-security/node_modules
+trident-network-security/public
