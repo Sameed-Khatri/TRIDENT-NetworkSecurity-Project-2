@@ -1,0 +1,133 @@
+/* Assuming you are using CSS Modules, else remove the module part */
+.home-page {
+  color: white;
+  background-color: #012137; /* Dark blue background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+
+/* Other styles remain the same */
+
+
+
+
+.logo-container {
+  margin-bottom: 1em;
+}
+
+.logo {
+  width: 150px; /* Adjust the size as needed */
+  height: auto;
+}
+
+.header-title {
+  font-size: 2.5em;
+  color: #04A9F4; /* Light blue from the logo */
+  margin-bottom: 0.2em;
+}
+
+.full-form {
+  font-size: 1.2em;
+  color: #E0F7FA; /* A lighter shade for the subtitle */
+  margin-bottom: 1em;
+}
+
+.tagline {
+  font-size: 1em;
+  font-weight: 300;
+  color: #FFFFFF; /* White color for the tagline text */
+  max-width: 600px; /* Adjust as needed */
+  margin: auto; /* Center the tagline */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh; /* This ensures it covers the full viewport height */
+}
+
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.capture-button {
+  background-color: #000000; /* Light blue, similar to the header title */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.capture-button:hover {
+  background-color: #033041; /* Darker shade for hover effect */
+}
+
+.capture-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.info-container {
+  margin-top: 20px; /* Adds space between the button and the message box */
+  width: 80%; /* Adjust as needed */
+  max-width: 600px; /* Prevents it from getting too wide on larger screens */
+  text-align: left;
+}
+
+.capture-message, .timer {
+  background-color: #f2f2f2; /* Light grey background */
+  color: #333; /* Darker text for better readability */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  margin-bottom: 10px; /* Space between each message */
+}
+
+.warning-prompt {
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: colorChange 2s infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes colorChange {
+  0% { background-color: red; }
+  25% { background-color: orange; }
+  50% { background-color: yellow; }
+  75% { background-color: violet; }
+  100% { background-color: red; }
+}
+
